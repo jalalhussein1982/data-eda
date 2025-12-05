@@ -160,9 +160,9 @@ def is_potential_datetime(series: pd.Series) -> bool:
         return False
 
     try:
-        pd.to_datetime(sample, infer_datetime_format=True)
+        pd.to_datetime(sample, format='mixed')
         return True
-    except:
+    except Exception:
         return False
 
 

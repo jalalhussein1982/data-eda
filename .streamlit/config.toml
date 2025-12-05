@@ -1,0 +1,17 @@
+[server]
+maxUploadSize = 100
+enableXsrfProtection = true
+enableCORS = false
+
+[browser]
+gatherUsageStats = false  # CRITICAL: Disable Streamlit telemetry for GDPR
+
+[client]
+showErrorDetails = false  # Prevent data leakage in error messages
+
+[theme]
+primaryColor = "#4F8BF9"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
